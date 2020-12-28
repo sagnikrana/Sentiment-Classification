@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Data related
+
+data/
+datasets/
+images/
+*.jpg
+*.csv
+*.xls
+*.xlsx
+*.mp4
+*.pptx
+.DS_Store
+*.DS_Store
