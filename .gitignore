@@ -148,3 +148,4 @@ saves/*
 .vscode/
 custom_embeddings/trained_embeddings.*
 experimental/.data/
+.idea/
