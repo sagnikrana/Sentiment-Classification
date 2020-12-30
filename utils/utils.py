@@ -12,7 +12,7 @@ def process_tweet(tweet):
     :param tweet: sentence(tweet) to be cleaned
     :return: list of cleaned tokens
     """
-
+    tweet = str(tweet)
     stemmer = PorterStemmer()
     stopwords_english = stopwords.words('english')
     # remove stock market tickers like $GE
@@ -20,6 +20,7 @@ def process_tweet(tweet):
     # remove old style retweet text "RT"
     tweet = re.sub(r'^RT[\s]+', '', tweet)
     # remove hyperlinks
+    
     tweet = re.sub(r'https?:\/\/.*[\r\n]*', '', tweet)
     # remove hashtags
     # only removing the hash # sign from the word
